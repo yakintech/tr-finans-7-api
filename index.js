@@ -39,6 +39,11 @@ app.use((req, res, next) => {
 })
 
 
+app.get('/', (req,res) => {
+    res.json({"message": "Hello"});
+})
+
+
 app.get('/api/orders', (req, res) => {
     res.json(orders)
 })
